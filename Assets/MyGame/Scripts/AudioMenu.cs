@@ -16,13 +16,15 @@ public class AudioMenu : MonoBehaviour
     public void PlayAudio()
     // AudioSource.play
     {
-        myAudioSource.Play();
+       // myAudioSource.Play();
+       FindAnyObjectByType<Audiomanager>().Play("DrumSolo");
     }
     
     public void PauseAudio()
     // AudioSource.pause
     {
-        myAudioSource.Pause();
+        //myAudioSource.Pause();
+        FindAnyObjectByType<Audiomanager>().Pause("DrumSolo"); 
     }
 
     public void StopAudio()
