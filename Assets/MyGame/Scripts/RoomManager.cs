@@ -19,7 +19,6 @@ public class RoomManager : MonoBehaviour
                 Vector3 tablePosition = new Vector3(col * tableLayout.tableSpacing, 0, row * tableLayout.tableSpacing);
                 GameObject table = Instantiate(tablePrefab, tablePosition, Quaternion.identity, transform);
 
-                // Suche nach pos1 und pos2 am instanziierten Tisch
                 Transform pos1 = table.transform.Find("pos1");
                 Transform pos2 = table.transform.Find("pos2");
 
