@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   studentName: Simon Weitgasser
   eyecolor: {r: 0, g: 0, b: 1, a: 0}
-  studentImage: {fileID: 21300000, guid: 80c748a2861f15e409f238de4e47ebf1, type: 3}
-  studentClip: {fileID: 8300000, guid: 3fc9caac3b8c59a43b9c8c97e9f16f0b, type: 3}
+  studentImage: {fileID: 21300000, guid: f0dd604b14fc99a42b88917ffc9f6bc0, type: 3}
+  studentClip: {fileID: 8300000, guid: 7c2c32a26406c334ca86ba6484db796c, type: 3}

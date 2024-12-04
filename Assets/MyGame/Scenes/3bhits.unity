@@ -208,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530063115}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.35646966, y: 0.61067915, z: -0.3628558, w: 0.60690707}
-  m_LocalPosition: {x: 7.96, y: 9.36, z: -2.61}
+  m_LocalRotation: {x: 0.19679642, y: 0.6791695, z: -0.20390967, w: 0.6770678}
+  m_LocalPosition: {x: -1.92, y: 3.19, z: 3.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 61.147, y: 90, z: -0.601}
+  m_LocalEulerAnglesHint: {x: 32.92, y: 90, z: -0.601}
 --- !u!1 &1258340134
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +249,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6a657d281058c9c4e98357abf24b694c, type: 2}
   - {fileID: 11400000, guid: 49388a874be09f74184756c0b9c9d835, type: 2}
   - {fileID: 11400000, guid: c8ea1d6fd74abda4893b23fa3c08d4aa, type: 2}
+  - {fileID: 11400000, guid: f5dbdeae8a09a414c9f7b09a2546fe1e, type: 2}
+  - {fileID: 11400000, guid: 8fc04e93ad86d30448e19d3e3dd2b443, type: 2}
+  - {fileID: 11400000, guid: 30d5c3231dc109e4e8759b3af06ebdb3, type: 2}
+  - {fileID: 11400000, guid: 773cfe84d7e9a2d408e3a49157d144f2, type: 2}
+  - {fileID: 11400000, guid: d281dfde30518b14da07832b9a30bde6, type: 2}
+  - {fileID: 11400000, guid: 12ab08dd0001ab348b2536a96b686ccd, type: 2}
+  - {fileID: 11400000, guid: 886c840bd171e7d4fba347b1dc33dfe2, type: 2}
+  - {fileID: 11400000, guid: 2cf5cb143fb613c4095190b0f35b859a, type: 2}
+  - {fileID: 11400000, guid: e57906514047fe847b281cc0ce5b12d0, type: 2}
+  - {fileID: 11400000, guid: 18510d4483415df48ae793e75593fb3d, type: 2}
+  - {fileID: 11400000, guid: 3341e9c3039063e408b3f33c74459052, type: 2}
+  - {fileID: 11400000, guid: b6c9a77e7099fd747b84ad63ec0f4145, type: 2}
+  - {fileID: 11400000, guid: dec3ab4001449f1448f5f8045d93b688, type: 2}
+  - {fileID: 11400000, guid: 5cd5b71eb4aa1894cbfc3b116544f0f9, type: 2}
+  - {fileID: 11400000, guid: b4aca2590736728438a1adbb3a575335, type: 2}
+  - {fileID: 11400000, guid: 8b19c79279dddb245941b225bb78f1bd, type: 2}
   tablePrefab: {fileID: 1243259935979854, guid: da536aa57b3c6824093ab141245a54ba, type: 3}
   chairPrefab: {fileID: 1576617969557092, guid: ebb2c3175a4c6d44b893dfc76330ddb0, type: 3}
   twoSeater: {fileID: 1896015038368403454, guid: a4f6c60038c48d94ca13c87b6584cd2b, type: 3}

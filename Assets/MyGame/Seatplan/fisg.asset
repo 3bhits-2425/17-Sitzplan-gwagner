@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: fisg
   m_EditorClassIdentifier: 
   studentName: Georg Fischinger
-  eyecolor: {r: 0, g: 0, b: 1, a: 0}
-  studentImage: {fileID: 21300000, guid: 80c748a2861f15e409f238de4e47ebf1, type: 3}
-  studentClip: {fileID: 8300000, guid: 3fc9caac3b8c59a43b9c8c97e9f16f0b, type: 3}
+  eyecolor: {r: 0.3301887, g: 0.11719585, b: 0.010590936, a: 0}
+  studentImage: {fileID: 21300000, guid: 116dbdd33050c8942b5c36181f0a1441, type: 3}
+  studentClip: {fileID: 8300000, guid: 9d0977ca003f8f348989273cb78a5eaa, type: 3}
