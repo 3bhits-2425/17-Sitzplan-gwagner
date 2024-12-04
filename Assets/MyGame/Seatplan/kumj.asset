@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bedcf60dd8e299242b8dcee63103a10f, type: 3}
-  m_Name: Student 1
+  m_Name: kumj
   m_EditorClassIdentifier: 
-  studentName: Vinzent Achinger
+  studentName: Jai Kumar
   eyecolor: {r: 0, g: 0, b: 1, a: 0}
   studentImage: {fileID: 21300000, guid: 80c748a2861f15e409f238de4e47ebf1, type: 3}
   studentClip: {fileID: 8300000, guid: 3fc9caac3b8c59a43b9c8c97e9f16f0b, type: 3}
