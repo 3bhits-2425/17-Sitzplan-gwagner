@@ -8,3 +8,4 @@ Was ich alles gelernt habe:<br>
 -Wie ich ein Git-Repository zu meinen Vorteil benutzt<br>
 -Wie ich Lokale Dateien versioniere um immer Up to Date zu sein<br>
 
+![Image](https://github.com/user-attachments/assets/1cf4f5b1-aa5b-45d8-b050-0176dc84fa68)
