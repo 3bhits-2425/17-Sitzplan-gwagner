@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
     {
         for (int i = 0; i < 100; i++)
         {
-            Instantiate(prefab, myParent.transform);
+            Instantiate(prefab, myParent.transform)
         }
     }
 }
