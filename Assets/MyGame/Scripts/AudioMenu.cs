@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,8 +5,8 @@ public class AudioMenu : MonoBehaviour
 {
     private AudioSource myAudioSource;
 
-    //2 Variablen, um den Button und den Text zu finden 
-    private GameObject playPauseButton;
+    //2 Variablen, um den Button und den Text zu finden
+    GameObject playPauseButton;
     private TMP_Text playPauseButtonText;
 
  
