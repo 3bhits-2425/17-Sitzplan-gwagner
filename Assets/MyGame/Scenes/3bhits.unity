@@ -208,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530063115}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19679642, y: 0.6791695, z: -0.20390967, w: 0.6770678}
-  m_LocalPosition: {x: -0.75, y: 1.86, z: 3.23}
+  m_LocalRotation: {x: -0.07321836, y: 0.69871867, z: -0.06994166, w: -0.70819455}
+  m_LocalPosition: {x: 25.69, y: 6.19, z: 4.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 32.92, y: 90, z: -0.601}
+  m_LocalEulerAnglesHint: {x: 11.621, y: 270.752, z: -0.19}
 --- !u!1 &1258340134
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +267,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8b19c79279dddb245941b225bb78f1bd, type: 2}
   tablePrefab: {fileID: 1243259935979854, guid: da536aa57b3c6824093ab141245a54ba, type: 3}
   chairPrefab: {fileID: 1576617969557092, guid: ebb2c3175a4c6d44b893dfc76330ddb0, type: 3}
-  twoSeater: {fileID: 1896015038368403454, guid: a4f6c60038c48d94ca13c87b6584cd2b, type: 3}
+  Human: {fileID: 1525218576529477831, guid: 889d24f8fc349cf45b463fb9b13b0143, type: 3}
+  Laptop: {fileID: 1716111664439686, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
 --- !u!4 &1258340136
 Transform:
   m_ObjectHideFlags: 0
