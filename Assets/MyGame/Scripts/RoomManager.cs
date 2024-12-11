@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -76,6 +77,10 @@ public class RoomManager : MonoBehaviour
 
         // Erhöhe den Index für den nächsten Aufruf
         currentStudentIndex = (currentStudentIndex + 1) % students.Length; // Zyklisch
+
+        if (currentStudentIndex > 18){
+            return Human.name = "Human";
+        }
 
         return studentName;
     }
