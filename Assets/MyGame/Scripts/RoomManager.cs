@@ -10,6 +10,9 @@ public class RoomManager : MonoBehaviour
     [SerializeField] private GameObject chairPrefab;
     [SerializeField] private GameObject Human;
     [SerializeField] private GameObject Laptop;
+
+    private int currentStudentIndex = 0; // Index für den aktuellen Schüler
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +43,15 @@ public class RoomManager : MonoBehaviour
                 if (pos3)
                 {
                     Quaternion adjustedRotation = pos3.rotation * Quaternion.Euler(0, 90, 0);
-                    Instantiate(Human, pos3.position, adjustedRotation, table.transform);
+                    GameObject human = Instantiate(Human, pos3.position, adjustedRotation, table.transform);
+                    human.name = GetNextStudentName(); // Nächster Schülername
                 }
 
                 if (pos4)
                 {
                     Quaternion adjustedRotation = pos4.rotation * Quaternion.Euler(0, 90, 0);
-                    Instantiate(Human, pos4.position, adjustedRotation, table.transform);
+                    GameObject human = Instantiate(Human, pos4.position, adjustedRotation, table.transform);
+                    human.name = GetNextStudentName(); // Nächster Schülername
                 }
 
                 if (pos5)
@@ -62,5 +67,16 @@ public class RoomManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private string GetNextStudentName()
+    {
+        // Hole den aktuellen Schülernamen
+        string studentName = students[currentStudentIndex].name;
+
+        // Erhöhe den Index für den nächsten Aufruf
+        currentStudentIndex = (currentStudentIndex + 1) % students.Length; // Zyklisch
+
+        return studentName;
     }
 }
