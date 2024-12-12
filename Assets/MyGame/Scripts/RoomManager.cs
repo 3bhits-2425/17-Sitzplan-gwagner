@@ -6,10 +6,10 @@ using UnityEngine;
 public class RoomManager : MonoBehaviour
 {
     [SerializeField] private TableStudentData tableLayout;
-    [SerializeField] private StudentData[] students;
+    [SerializeField] private StudentData[] students; // ScriptableObject-Array mit Sprite-Referenzen
     [SerializeField] private GameObject tablePrefab;
     [SerializeField] private GameObject chairPrefab;
-    [SerializeField] private GameObject Human;
+    [SerializeField] private GameObject Human; // Human-Objekt
     [SerializeField] private GameObject Laptop;
 
     private int currentStudentIndex = 0; // Index für den aktuellen Schüler
@@ -45,14 +45,14 @@ public class RoomManager : MonoBehaviour
                 {
                     Quaternion adjustedRotation = pos3.rotation * Quaternion.Euler(0, 90, 0);
                     GameObject human = Instantiate(Human, pos3.position, adjustedRotation, table.transform);
-                    human.name = GetNextStudentName(); // Nächster Schülername
+                    AssignStudentSprite(human); // Setze das Sprite für den Schüler
                 }
 
                 if (pos4)
                 {
                     Quaternion adjustedRotation = pos4.rotation * Quaternion.Euler(0, 90, 0);
                     GameObject human = Instantiate(Human, pos4.position, adjustedRotation, table.transform);
-                    human.name = GetNextStudentName(); // Nächster Schülername
+                    AssignStudentSprite(human); // Setze das Sprite für den Schüler
                 }
 
                 if (pos5)
@@ -70,18 +70,40 @@ public class RoomManager : MonoBehaviour
         }
     }
 
-    private string GetNextStudentName()
+    private void AssignStudentSprite(GameObject human)
     {
         // Hole den aktuellen Schülernamen
-        string studentName = students[currentStudentIndex].name;
+        StudentData currentStudent = students[currentStudentIndex];
 
         // Erhöhe den Index für den nächsten Aufruf
         currentStudentIndex = (currentStudentIndex + 1) % students.Length; // Zyklisch
 
-        if (currentStudentIndex > 18){
-            return Human.name = "Human";
-        }
+        if (currentStudent != null && currentStudent.studentImage != null)
+        {
+            // Finde die Komponente "Man_Head_Mesh" im Human-Objekt
+            SkinnedMeshRenderer headMeshRenderer = human.transform.Find("Man_Head_Mesh")?.GetComponent<SkinnedMeshRenderer>();
 
-        return studentName;
+            if (headMeshRenderer != null)
+            {
+                // Erstelle ein neues Material und setze die Textur basierend auf dem Sprite
+                Material headMaterial = new Material(Shader.Find("Standard"));
+                headMaterial.mainTexture = currentStudent.studentImage.texture;
+
+                // Wende das Material auf die "Man_Head_Mesh"-Komponente an
+                headMeshRenderer.material = headMaterial;
+            }
+            else
+            {
+                Debug.LogWarning("Man_Head_Mesh nicht gefunden im Human-Objekt");
+            }
+
+            // Setze den Namen des Objekts entsprechend des Schülers
+            human.name = currentStudent.name;
+        }
+        else
+        {
+            Debug.LogWarning("Kein StudentData oder Sprite für Index " + currentStudentIndex);
+            human.name = "Schüler"; // Fallback-Name
+        }
     }
 }
